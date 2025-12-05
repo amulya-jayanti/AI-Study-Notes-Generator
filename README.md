@@ -31,7 +31,6 @@ requirements.txt       → Python dependencies
 dataset_preparation.ipynb → run this to prepare the datasets
 ```
 ---
-Note: Evaluation datasets are not included in the repository. To recreate them, run dataset_preparation.ipynb, which automatically builds the full 1265-item evaluation corpus (ML-ArXiv papers, StackOverflow ML Q&A, PubMedQA, interview Q&A, and the 115-term glossary).
 
 ## 🛠 Prerequisites
 
@@ -82,6 +81,12 @@ The app uses:
 * GPT-4o / GPT-4o-mini
 * OpenAI embeddings for vector search
 * SentenceTransformers (`MiniLM-L6-v2`) for clustering
+
+### **5. Create your evaluation datasets**
+
+This repo doesnt provide the dataset. To generate the evaluation dataset(summaries, Q&A, glossary references, ML papers, StackOverflow Q&A, PubMedQA, etc.)
+- Run: dataset_preparation.ipynb
+- This notebook builds the full 1265-item evaluation corpus used by the app.
 
 ---
 
